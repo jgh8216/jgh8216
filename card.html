@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+<head>
+  <title> Happy Birthday! </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    body{background-color:red;}
+    *{box-sizing:border-box;} 
+  
+    .col-1 {width: 8.33%; float:left;} 
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+
+  [class*="col-"] {
+    float:left;
+    padding:30px;
+    border:10px solid white;
+    background-color: green;
+  }
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+
+    </style>
+</head>
+<body>
+<div>
+  <div class="row"> 
+  <div align="center" class="col-12"> <h1> Happy Birthday! My friend!  </h1> </div>
+  </div>
+
+<script type="text/javascript"> //이 소스는 8이 어떻게 각각 나오는지 출력하는 소스 입니다. //
+
+    function method1()
+    {
+      console.log("before getElementById");
+      console.log("after getElementByIdID");    
+
+        var d=document.getElementById("div1");
+      var newimg=document.createElement("img");
+      newimg.style.height="300px";
+      newimg.style.width="300px";
+      var r=Math.floor(Math.random()*10+1);
+      if(r<5)
+      newimg.src="image1.jpg"
+      else
+      newimg.src="image2.jpg"
+      newimg.style.margin="10px";
+      d.appendChild(newimg);
+    }
+    function method2()
+    {
+      console.log("before getElementById");
+      console.log("after getElementByIdID");
+
+        var d=document.getElementById("div2");
+      var newimg=document.createElement("img");
+      newimg.style.height="300px";
+      newimg.style.width="300px";
+      var r=Math.floor(Math.random()*10+1);
+      if(r<5)
+      newimg.src="osman.jpg"
+      else
+      newimg.src="hours.jpg"
+
+      newimg.style.margin="10px";
+      d.appendChild(newimg);
+    }
+    function method3()
+    {
+      window.alert("Happy Birthday!");
+    }
+
+    </script>
+  
+  <h1 align="center"> This my gift card. </h1>
+  <h2 align="center"> My gift is a Food picture! </h2>
+  <div id="div1">
+  </div>
+  <p align="center" onclick="method1()" id="click" > Click me! </p>
+  <h2 align="center"> And gift is game picture! </h2>
+  <div id="div2">
+  </div>
+  <p align="center" onclick="method2()" id="para1" > Click me! </p>
+  <h1 align="center"> It is your cake card! </h1>
+  <div>
+  <div class="row"> 
+  <div align="center" class="col-12"> <img align="center" src="cake1.jpg" width="250px"> </div>
+  </div>
+  <p align="center" onclick="method3()"> Click me! </p>
+  <h1>  </h1>
+ 
+
+
+</body>
+</html>
