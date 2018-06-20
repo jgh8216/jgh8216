@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+   <meta charset="UTF-8">
+   <title> animation card </title>
+   <style>
+body{
+      background-color:pink;
+      font-family:"times new roman",serif;
+    font-size:16px;
+   }
+h1{
+   font-family:Comic Sans MS;
+}
+h2{
+   font-family:Comic Sans MS;
+}
+div{
+      font-family:Comic Sans MS;
+      border:25px solid red;
+      padding:25px;
+      margin:25px;
+      width:80%;
+      text-align:center;
+      background-color: white;
+      color:purple;
+   }
+p{
+   color:white;
+   font-family:"times new roman",serif;
+   text-align:center;
+}
+strong{
+   background-color:yellow;
+}
+</style>
+</head>
+
+<body>
+   <script type="text/Javascript">
+      var d=new Date();
+       var day=d.getDay();
+       document.write(d + "<br/>");
+       document.write(anyd);
+      function switchOn()
+      {
+         document.getElementById("img1").src="lighton.jpg";
+      }
+      function switchOff()
+      {
+         document.getElementById("img1").src="lightoff.jpg";
+      }
+   </script>
+<h1> 당신의 20번째 생일을 축하합니다!! </h1>
+<div><h2> <strong>Happy Birthday!!</strong> my friend </h2>
+<button onclick="switchOn()"> 초에 불붙히기 </button>
+<img src="lightoff.jpg" id="img1" alt="image" title="This is my image"/>
+<button onclick="switchOff()"> 후 불기 </button></div>
+<p> IT공학부 모바일소프트웨어공학과 18114821 권민수 </p>
+<p> copyright@gwonminsu </p>
+
+</body>
+</html>
